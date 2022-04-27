@@ -14,7 +14,7 @@ Docker (https://docs.docker.com/) のインストールが完了しているこ�
 1. 'docker container stop containerID' の実行により，コンテナを停止．  containerIDは `docker container ls`で確認可能．
 
 ### おまけ
-- **作成済みのコンテナの利用** : 'docker container start containerID' の実行により，作成済みのコンテナを再起動．  起動していないコンテナは確認には， `docker container ls -a` を実行する．  その後の使い方は，先に説明した使用の流れ (`docker exec ...`) と同じ．
-- **コンテナの削除** : 'docker container rm containerID' によりコンテナ削除．  削除前にコンテナは停止させる．
-- **イメージの削除** : 'docker image rm imageID' によりイメージ削除
-- **ライブラリの追加** : requirements.txt に必要なライブラリを記述してからコンテナ作成．
+- **作成済みのコンテナの利用** : `docker container start containerID` の実行により，作成済みのコンテナを再起動．  起動していないコンテナは確認には， `docker container ls -a` を実行する．  その後の使い方は，先に説明した使用の流れ (`docker exec ...`) と同じ．
+- **コンテナの削除** : `docker container rm containerID` によりコンテナ削除．  削除前にコンテナは停止させる．
+- **イメージの削除** : `docker image rm imageID` によりイメージ削除
+- **ライブラリの追加** : **requirements.txt** に必要なライブラリを記述してからコンテナ作成．
